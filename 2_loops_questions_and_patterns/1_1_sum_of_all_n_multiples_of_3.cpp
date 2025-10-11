@@ -12,10 +12,11 @@ int main()
     {
         sum += (long long)i * m;
     }
+    std::cout << "\n*********** Using loops ***********\n";
     std::cout << "The sum of the first " << n << " multiples of " << m
               << " is: " << sum << std::endl;
     // using mathematical formula
-    std::cout << "\n\n*********** Using mathematical formula ***********";
+    std::cout << "\n*********** Using mathematical formula ***********";
     long long sum_total = m * (n * (n + 1)) / 2;
     std::cout << "\nThe sum of the first " << n << " multiples of " << m
               << " is: " << sum << std::endl;
