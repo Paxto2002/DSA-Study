@@ -65,9 +65,6 @@ DSA-in-CPP/
 ├── 10_DynamicProgramming/
 └── README.md
 
-yaml
-Copy code
-
 Each folder will contain:
 
 - A `README.md` or summary file
