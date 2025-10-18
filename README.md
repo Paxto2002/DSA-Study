@@ -1,4 +1,3 @@
-
 <h1 align="center">
   🚀 My DSA Journey in C++
 </h1>
@@ -27,6 +26,7 @@
 | 📺 | **Complete C++ DSA Course** | Apna College / Shradha Khapra    | [![YouTube](https://img.shields.io/badge/Watch_Playlist-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt) |
 | 🎓 | **MIT OCW – 6.006**        | Introduction to Algorithms       | [![MIT OCW](https://img.shields.io/badge/Explore_Course-8E2DE2?style=for-the-badge&logo=mit&logoColor=white)](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/)    |
 | 📚 | **CLRS Textbook**           | Cormen, Leiserson, Rivest, Stein | *Introduction to Algorithms*                                                                                                                                                         |
+
 
 </div>
 
@@ -107,37 +107,48 @@ Each folder will contain:
 - A `README.md` or summary file
 - `.cpp` files of solutions
 - Notes or insights
-=======
+  =======
+
 >>>>>>> 126a18f (Binary Number system)
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
 
 ---
+
 ## 📊 Progress Tracker
 
 <div align="center">
 
-
-
 | Status | Topic                           | Completion | Notes                             |
-| -------- | --------------------------------- | ------------ | ----------------------------------- |
+| ------ | ------------------------------- | ---------- | --------------------------------- |
 | ✅     | **Basics & Fundamentals** | Oct 2025   | Strong foundation established     |
 | ✅     | **Patterns & Loops**      | Oct 2025   | Problem-solving mindset developed |
 | 🔄     | **Arrays & Strings**      | Nov 2025   | Active practice & implementation  |
 | ⏳     | **Pointers & Memory**     | Nov 2025   | Upcoming deep dive                |
 | ⏳     | **Recursion**             | Dec 2025   | Building recursive thinking       |
 
-
 </div>**<div align="center">****Overall Progress:**
 
+**
+
+****Overall Progress:**
 
 <img src="https://progress-bar.dev/25/?width=400&color=ff6b6b" alt="Progress Bar">
 
-
-<small>25% Complete | Journey continues... 🚀**</small>**
+`<small>`25% Complete | Journey continues... 🚀**`</small>`**
 
 </div>---
 
-## 🚀 Quick Start
 ---
+
+## 🚀 Quick Start
+
+---
+
 # Clone the repository
 
 git clone https://github.com/Paxto2002/DSA-Study.git
@@ -151,12 +162,15 @@ cd DSA-in-CPP/02_Arrays/
 g++ -std=c++17 solution.cpp -o solution
 ./solution
 
-
 ## 💫 Learning Philosophy
 
 <div align="center">> ### 🎯 "Don't just code—pause, think, and internalize"
 
 </div>**<div align="center">**
+
+**| 🔓 | **Algorithms Unlocked** | Thomas H. Cormen | *Simplified algorithmic concepts* |
+
+**
 
 **| Principle                     | Icon | Description                                |
 | ----------------------------- | ---- | ------------------------------------------ |
@@ -166,6 +180,8 @@ g++ -std=c++17 solution.cpp -o solution
 | **Consistent Practice** | ⏰   | Little and often beats cramming            |
 
 </div>---
+
+---
 
 ---## 🤝 Contribution & Support
 
@@ -177,6 +193,8 @@ g++ -std=c++17 solution.cpp -o solution
 
 </div>---
 
+---
+
 ---## 🙏 Acknowledgments
 
 <div align="center">
@@ -187,9 +205,14 @@ g++ -std=c++17 solution.cpp -o solution
 | 🏛️   | **MIT OCW 6.006**  | Academic Resource | Deep theoretical understanding   |
 | 📖     | **CLRS Authors**   | Textbook          | Algorithmic thinking foundation  |
 
-</div>---
+| 🔓 | **Algorithms Unlocked** | Thomas H. Cormen | *Simplified algorithmic concepts* |
+
+`</div>`---
 
 ---
+
+---
+
 <div align="center">## 🌈 Let's Connect!
 
 [](https://www.linkedin.com/in/hafiz-waseem-ahmed-50a4b2347/)[https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)
@@ -206,4 +229,6 @@ g++ -std=c++17 solution.cpp -o solution
 
  ```
 
- ```
+```
+
+```
