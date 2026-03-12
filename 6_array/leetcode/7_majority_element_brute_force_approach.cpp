@@ -1,29 +1,32 @@
 #include <iostream>
 #include <vector>
+
 int majorityElement(const std::vector<int> &nums)
 {
     int n = nums.size();
-    int majorityElement;
     for(int value : nums) {
-        int frequency = 1;
+        int frequency = 0; // start from 0
         for (int element : nums) {
             if (element == value)
             {
                 frequency++;
             }
         }
-        if (frequency > n/2)
+        if (frequency > n / 2) // check if more than half
         {
-            majorityElement = value;
+            return value; // return immediately when found
         }
-        
     }
-    return majorityElement;
+    return -1; // if no majority element exists
 }
 
 int main()
 {
     std::vector<int> nums = {2, 2, 2, 2, 1, 1, 1};
-    std::cout<<"Majority Element: "<<majorityElement(nums)<<"\n";
+    int me = majorityElement(nums);
+    if(me != -1)
+        std::cout << "Majority Element: " << me << "\n";
+    else
+        std::cout << "No majority element exists\n";
     return 0;
 }

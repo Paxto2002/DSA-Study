@@ -7,7 +7,7 @@ std::vector<int> pairSum(int target, const std::vector<int> &nums)
     {
         int sum = nums[start] + nums[end];
         if (sum == target)
-            return {nums[start], nums[end]}; // return pair
+            return {nums[start], nums[end]}; // return pair in form of an array(vector)
         else if (sum < target)
             start++;
         else

@@ -3,7 +3,7 @@
 #include <algorithm>
 int main()
 {
-    int n = 5;
+    int const n = 5;
     int nums[n] = {1, 2, 3, 4, 5};
     int maximumSum = INT_MIN;
     for (int start = 0; start < n; start++)

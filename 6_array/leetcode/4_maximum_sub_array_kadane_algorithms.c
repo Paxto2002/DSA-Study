@@ -8,7 +8,7 @@ int max(int a, int b)
 
 int main()
 {
-    int n = 7;
+    int const n = 7;
     int nums[] = {3, -4, 5, 4, -1, 7, -8};
 
     int maximumSum = INT_MIN;

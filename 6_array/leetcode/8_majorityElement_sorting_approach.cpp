@@ -21,12 +21,18 @@ int majorityElement(std::vector<int> &nums)
             majorityElement = nums[i];
         }
     }
-    return majorityElement;
+    return -1;
 }
 
 int main()
 {
-    std::vector<int> nums = {2, 2, 2, 2, 1, 1, 1};
-    std::cout << "Majority Element: " << majorityElement(nums) << "\n";
+    std::vector<int> nums = {2, 2, 2, 3, 4, 3, 5, 3, 6, 3, 7, 3, 2, 3, 3, 3, 3, 3};
+    int me = majorityElement(nums);
+    if (me != -1)
+    {
+        std::cout<<"No Majority Element found";
+    } else {
+        std::cout<<"Majority Element: ",me;
+    }
     return 0;
 }
