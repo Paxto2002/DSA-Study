@@ -4,11 +4,11 @@
 int majorityElement(int nums[], int n)
 {
     // Bubble sort: sort array in ascending order
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n -1; i++)
     {
-        for (int j = i + 1; j < n; j++)
+        for (int j = 0; j < n-i-1; j++)
         {
-            if (nums[i] > nums[j])
+            if (nums[i] > nums[j + 1])
             {
                 int temp = nums[i];
                 nums[i] = nums[j];
@@ -35,7 +35,7 @@ int majorityElement(int nums[], int n)
 
 int main()
 {
-    int nums[] = {2, 2, 2, 3, 4, 3, 5, 3, 6, 3, 7, 3, 2, 3, 3, 3, 3, 3};
+    int nums[] = {2,2,3,2,1};
     int n = sizeof(nums) / sizeof(nums[0]);
 
     int me = majorityElement(nums, n);
