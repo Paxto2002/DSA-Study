@@ -29,7 +29,7 @@ def recursive_fibonacci(n):
     # Time:  O(2^n) — doubles with each call (very slow for large n)
     # Space: O(n)   — max depth of call stack
 
-    if n <= 0:
+    if n < 1:
         return None                          # invalid input
     if n == 1 or n == 2:
         return 1                             # base case: fib(1) = fib(2) = 1
@@ -41,7 +41,7 @@ def iterative_fibonacci(n):
     # Time:  O(n) — single loop
     # Space: O(1) — only two variables, no call stack buildup
 
-    if n <= 0:
+    if n < 1:
         return None
     if n == 1 or n == 2:
         return 1
@@ -56,7 +56,7 @@ def memoized_fibonacci(n, memo={}):
     # Time:  O(n) — each value calculated ONCE and cached
     # Space: O(n) — memo dict + call stack
 
-    if n <= 0:
+    if n < 1:
         return None
     if n == 1 or n == 2:
         return 1
@@ -113,8 +113,10 @@ while True:
         if num > 30:
             print(f"⚠️  Warning: Recursive is very slow for n={num} (O(2^n))")
             print(f"   Showing Iterative and Memoized only for large n.\n")
+            recur_result = recursive_fibonacci(num)
             iter_result = iterative_fibonacci(num)
             memo_result = memoized_fibonacci(num)
+            print(f"Simple Recursive : fib({num}) = {iter_result}")
             print(f"Iterative : fib({num}) = {iter_result}")
             print(f"Memoized  : fib({num}) = {memo_result}\n")
         else:
