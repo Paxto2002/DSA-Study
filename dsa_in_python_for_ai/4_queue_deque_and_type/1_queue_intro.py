@@ -83,9 +83,7 @@ class Queue:
         print(f"Queue (front -> rear): {self.q}")
 
 
-# =========================
-# Example Usage
-# =========================
+
 if __name__ == "__main__":
     q = Queue()
 
