@@ -41,84 +41,55 @@ Both tracks feed into **LeetCode problem solving** — where theory meets the re
 
 ## &nbsp; 🗺️ &nbsp; Learning Roadmap
 
-```mermaid
-graph TD
-    A[🚀 DSA Mastery] --> B[📊 Basics & Complexity]
-    B --> C[🔢 Arrays & Strings]
-    C --> D[📍 Pointers & Memory]
-    D --> E[🔄 Recursion]
-    E --> F[🎯 Sorting & Searching]
-    F --> G[⛓️ Linked Lists]
-    G --> H[📚 Stacks & Queues]
-    H --> I[🌳 Trees & BST]
-    I --> J[🕸️ Graphs & Algorithms]
-    J --> K[💡 Dynamic Programming]
-    K --> L[⚡ Advanced Patterns]
-
-    style A fill:#7C3AED,color:#fff
-    style B fill:#4F46E5,color:#fff
-    style C fill:#06B6D4,color:#fff
-    style D fill:#0891B2,color:#fff
-    style E fill:#059669,color:#fff
-    style F fill:#D97706,color:#fff
-    style G fill:#DC2626,color:#fff
-    style H fill:#7C3AED,color:#fff
-    style I fill:#4F46E5,color:#fff
-    style J fill:#06B6D4,color:#fff
-    style K fill:#059669,color:#fff
-    style L fill:#D97706,color:#fff
 ```
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
----
-
-## &nbsp; 📂 &nbsp; Repository Structure
-
+                         ┌─────────────────────────┐
+                         │   🚀  DSA  MASTERY       │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  📊  Basics & Complexity │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  🔢  Arrays & Strings    │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  📍  Pointers & Memory   │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  🔄  Recursion           │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  🎯  Sorting & Searching  │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  ⛓️  Linked Lists        │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  📚  Stacks & Queues     │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  🌳  Trees & BST         │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  🕸️  Graphs & Algorithms │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  💡  Dynamic Programming  │
+                         └────────────┬────────────┘
+                                      │
+                         ┌────────────▼────────────┐
+                         │  ⚡  Advanced Patterns   │
+                         └─────────────────────────┘
 ```
-DSA-Study/
-│
-├── 🔧 C-CPP/                        ← Low-level logic & memory mastery
-│   ├── 01_Basics/
-│   │   ├── loops_patterns.cpp
-│   │   ├── time_complexity.cpp
-│   │   └── notes.md
-│   ├── 02_Arrays/
-│   ├── 03_Strings/
-│   ├── 04_Pointers_Memory/
-│   ├── 05_Recursion/
-│   ├── 06_Sorting_Searching/
-│   ├── 07_LinkedList/
-│   ├── 08_Stack_Queue/
-│   ├── 09_Trees_BST/
-│   ├── 10_Graphs/
-│   └── 11_DP/
-│
-├── 🐍 Python/                        ← AI/ML/DS pattern thinking
-│   ├── 01_Basics/
-│   ├── 02_Arrays_Lists/
-│   ├── 03_Recursion/
-│   ├── 04_Sorting_Searching/
-│   ├── 05_LinkedList/
-│   ├── 06_Stack_Queue/
-│   ├── 07_Trees/
-│   ├── 08_Graphs/
-│   └── 09_DP/
-│
-├── 🎯 LeetCode/                      ← Problems — solved, broken, understood
-│   ├── Easy/
-│   ├── Medium/
-│   └── Hard/
-│
-└── 📄 README.md
-```
-
-Each folder contains:
-- Well-commented solution files
-- A `notes.md` or inline comments with *why*, not just *what*
-- Observations and edge cases learned
 
 <br/>
 
