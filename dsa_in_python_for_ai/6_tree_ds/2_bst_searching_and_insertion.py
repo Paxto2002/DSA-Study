@@ -37,7 +37,7 @@ def insertion_in_bst(root, value):
 
     # If value already exists → do nothing (avoid duplicates)
     elif value == root.data:
-        return root
+        return root # Each subtree says "I updated my subtree → now I return myself upward"
 
     # If value is smaller → go to LEFT subtree
     elif value < root.data:
