@@ -72,7 +72,39 @@
 # mat[2][1] = 1
 # mat[2][3] = 5 ==> weighted graph
 # mat[2][3] = 0 ==> Edge deleted
+# Benefit of Matrix Representation: This method is easier to code
+# Disadvantage: Memory Wastage: Because all the 0's consume space too
+# Dense Graph: When 1's are bigger ==> Use Matrix Representation
+# Sparse Graph: When 1's are smaller ==> Do not use Matrix Representation
 
 class Graph:
     def __init__(self, vertex):
-        self.mat = [[0]*vertex for x in range(vertex)] 
+        self.mat = [[0]*vertex for x in range(vertex)]
+        self.size = vertex
+
+    def add_edge(self, src, dest):  # if we have weight and then in below lines inside the body of if block we will do = weight instead of = 1
+        if ((0 <= src < self.size) and (0 <= dest < self.size)):
+            # Boundary check: ensure both src and dest are valid indices
+            # 0 <= src < self.size  --> src must not be negative and must not exceed matrix size
+            # 0 <= dest < self.size --> dest must not be negative and must not exceed matrix size
+            # If either is invalid, we skip everything below to avoid IndexError
+    
+            self.mat[src][dest] = 1  # Set edge from src --> dest (forward direction)
+            self.mat[dest][src] = 1  # Set edge from dest --> src (backward direction)
+                             # Both lines together make it an UNDIRECTED graph
+                             # (two-way road: if 1->3 exists, 3->1 also exists)
+        else:
+            print("Invalid Edge")
+    
+    def print_graph(self):
+        for row in self.mat:
+            # print(' '.join(map(str, row)))
+            print(row)
+G = Graph(5)
+G.add_edge(0,1)
+G.add_edge(0,2)
+G.add_edge(1,3)
+G.add_edge(2,4)
+G.add_edge(3,4)
+G.add_edge(2,3)
+G.print_graph()
