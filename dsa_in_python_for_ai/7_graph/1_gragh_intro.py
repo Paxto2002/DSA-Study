@@ -95,16 +95,41 @@ class Graph:
                              # (two-way road: if 1->3 exists, 3->1 also exists)
         else:
             print("Invalid Edge")
-    
+
+    def remove_edge(self, src, dest):  
+        # Check if indices are valid
+        if ((0 <= src < self.size) and (0 <= dest < self.size)):
+            
+            # Remove edge in both directions (undirected graph)
+            self.mat[src][dest] = 0
+            self.mat[dest][src] = 0
+
+        else:
+            print("Invalid Edge")
+            
     def print_graph(self):
         for row in self.mat:
-            # print(' '.join(map(str, row)))
-            print(row)
+            print(' '.join(map(str, row)))
+
 G = Graph(5)
 G.add_edge(0,1)
+G.print_graph()
+print("\n*********************\n")
 G.add_edge(0,2)
+G.print_graph()
+print("\n*********************\n")
 G.add_edge(1,3)
+G.print_graph()
+print("\n*********************\n")
 G.add_edge(2,4)
+G.print_graph()
+print("\n*********************\n")
 G.add_edge(3,4)
+G.print_graph()
+print("\n*********************\n")
 G.add_edge(2,3)
 G.print_graph()
+print("\n*********************\n")
+G.remove_edge(2,3)
+G.print_graph()
+print("\n*********************\n")
