@@ -18,7 +18,7 @@
 # 1) Matrix Representation
 # 2) List Representation
 # C = {(1,2), (2,3), (1,4)} i.e. 1->4,1->2->3->2
-# We always make a square matrix 
+# We always make a square matrix where rows are sources and columns are destination
 # If u have 4 vertices then it'll be 4x4 matrix, if u have 3 vertices then it'll be 3x3 matrix, u have 5 vertices then it'll be 5x5 matrix
 #      1      2      3     4
 #    ___________________________
@@ -79,6 +79,76 @@
 
 class Graph:
     def __init__(self, vertex):
+        # Create a 2D adjacency matrix filled with 0s
+        # ----------------------------------------------------------
+        # Step 1:
+        # [0] * vertex
+        # If vertex = 4:
+        # [0] * 4  -->  [0, 0, 0, 0]
+        #
+        # This creates ONE row containing 4 zeros.
+        #
+        # ----------------------------------------------------------
+        # Step 2:
+        # for x in range(vertex)
+        # If vertex = 4:
+        # range(4) --> 0,1,2,3
+        #
+        # The loop runs 4 times.
+        #
+        # ----------------------------------------------------------
+        # Step 3:
+        # Each iteration creates a NEW row:
+        #
+        # Iteration 1 --> [0,0,0,0]
+        # Iteration 2 --> [0,0,0,0]
+        # Iteration 3 --> [0,0,0,0]
+        # Iteration 4 --> [0,0,0,0]
+        #
+        # Final Matrix:
+        #
+        # [
+        #   [0,0,0,0],
+        #   [0,0,0,0],
+        #   [0,0,0,0],
+        #   [0,0,0,0]
+        # ]
+        #
+        # ----------------------------------------------------------
+        # Why do we use list comprehension?
+        #
+        # Because each row becomes an independent list.
+        #
+        # WRONG WAY:
+        # [[0]*vertex]*vertex
+        #
+        # Problem:
+        # All rows point to SAME memory location.
+        #
+        # So changing one row changes all rows.
+        #
+        # Example:
+        # mat[0][1] = 1
+        #
+        # WRONG OUTPUT:
+        # [
+        #   [0,1,0,0],
+        #   [0,1,0,0],
+        #   [0,1,0,0],
+        #   [0,1,0,0]
+        # ]
+        #
+        # This happens because rows are shared.
+        #
+        # ----------------------------------------------------------
+        # CORRECT WAY:
+        # [[0]*vertex for x in range(vertex)]
+        #
+        # Creates separate independent rows.
+        #
+        # Time Complexity: O(V²)
+        # Space Complexity: O(V²)
+        # where V = number of vertices
         self.mat = [[0]*vertex for x in range(vertex)]
         self.size = vertex
 
