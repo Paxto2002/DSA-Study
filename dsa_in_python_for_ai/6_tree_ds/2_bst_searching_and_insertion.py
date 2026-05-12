@@ -75,7 +75,7 @@ def search_in_bst(root, value):
 
 
 # ----------------- In-order Traversal -----------------
-def in_order_traversal(root):
+def inorder_traversal(root):
     # Base case: empty tree → return empty list
     if root is None:
         return []
@@ -84,9 +84,9 @@ def in_order_traversal(root):
     # Left → Root → Right
     # For BST, this always gives SORTED order
     return (
-        in_order_traversal(root.left)  # all smaller values
+        inorder_traversal(root.left)  # all smaller values
         + [root.data]  # current node
-        + in_order_traversal(root.right)  # all larger values
+        + inorder_traversal(root.right)  # all larger values
     )
 
 
@@ -152,7 +152,7 @@ root = insertion_in_bst(root, 40)
 # ----------------- Output -----------------
 
 # In-order traversal prints values in sorted order
-print("In-Order Traversal:", in_order_traversal(root))
+print("In-Order Traversal:", inorder_traversal(root))
 # Output: [12, 15, 18, 20, 30, 40]
 
 # Search examples
