@@ -59,8 +59,8 @@ class Graph:
         # Add vertex only if it doesn't already exist
         if vertex not in self.adj_list:
             self.adj_list[vertex] = []
-        # else:
-        #     print("Vertex already exists")
+        else:
+            print("Vertex already exists")
 
     # ----------------- Add Edge -----------------
     def add_edge(self, src, dest):
