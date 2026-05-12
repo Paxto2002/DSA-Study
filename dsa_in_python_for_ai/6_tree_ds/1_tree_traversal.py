@@ -33,14 +33,14 @@ def pre_order_traversal(root):
     )
 
 
-def in_order_traversal(root):
+def inorder_traversal(root):
     if root is None:
         return []
     
     return (
-        in_order_traversal(root.left) +
+        inorder_traversal(root.left) +
         [root.data] +
-        in_order_traversal(root.right)
+        inorder_traversal(root.right)
     )
 
 
@@ -68,5 +68,5 @@ root.right.right = Node(8)
 # ----------------- Print Results -----------------
 
 print("Pre-Order Traversal:", pre_order_traversal(root))
-print("In-Order Traversal:", in_order_traversal(root))
+print("In-Order Traversal:", inorder_traversal(root))
 print("Post-Order Traversal:", post_order_traversal(root))
