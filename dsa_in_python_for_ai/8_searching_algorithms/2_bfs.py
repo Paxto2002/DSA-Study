@@ -64,21 +64,15 @@ class Graph:
             print(' '.join(map(str, row)))
 
 
-g = Graph(6)
-
-g.add_edge(0,1)  # 1-2
-g.add_edge(0,2)  # 1-3
-
-g.add_edge(1,2)  # 2-3
-g.add_edge(1,3)  # 2-4
-
-g.add_edge(2,3)  # 3-4
-
-g.add_edge(3,4)  # 4-5
-
-g.add_edge(4,5)  # 5-6
-
-g.add_edge(5,6)  # 6-7
+g = Graph(7)  # 7 nodes: 0,1,2,3,4,5,6
+g.add_edge(0,1)
+g.add_edge(0,2)
+g.add_edge(1,2)
+g.add_edge(1,3)
+g.add_edge(2,3)
+g.add_edge(3,4)
+g.add_edge(4,5)
+g.add_edge(5,6)
 
 g.print_graph()
 
