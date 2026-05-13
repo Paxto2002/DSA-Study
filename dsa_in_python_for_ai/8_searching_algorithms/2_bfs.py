@@ -41,19 +41,20 @@ class Graph:
                     if self.mat[v][i] == 1 and visited[i] == False:
 
                         stack.append(i)
+
     def bfs(self, src):
         visited = [False] * self.size
         queue = deque([src])
         visited[src] = True
 
         while queue:
-            v = queue.popleft()
+            v = queue.popleft() # Takeout the very first item from the queue so that it can be printed and processed.
             print(v, end = " ")
 
             for i in range(self.size):
                 if self.mat[v][i] == 1 and visited[i] == False:
                     visited[i] = True
-                    queue.append(i)
+                    queue.append(i) # appending neighbors so thet can e visited and processed later 
 
         
             
